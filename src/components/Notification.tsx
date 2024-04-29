@@ -65,10 +65,10 @@ const Notification = ({ type, message, description, txid, onHide }) => {
 
   return (
     <div
-      className={`bg-bkg-1 pointer-events-auto mx-4 mt-2 mb-12 w-full max-w-sm overflow-hidden rounded-md p-2 shadow-lg ring-1 ring-black ring-opacity-5`}
+      className={`bg-[#333333] pointer-events-auto mx-auto mt-2 mb-12 w-full max-w-sm overflow-hidden rounded-md p-2 shadow-lg ring-1 ring-black ring-opacity-5 relative z-20`}
     >
       <div className={`p-4`}>
-        <div className={`flex items-center`}>
+        <div className={`flex items-center justify-center relative z-20`}>
           <div className={`flex-shrink-0`}>
             {type === "success" ? (
               <CheckCircleIcon className={`mr-1 h-8 w-8 text-success`} />

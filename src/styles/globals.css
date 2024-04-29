@@ -23,3 +23,30 @@ a {
 .wallet-adapter-button:not([disabled]):hover {
   background-color: #707070;
 }
+
+.common-input {
+  background-color: #333333;
+  border: none;
+  border-radius: 15px;
+  height: 48px;
+  font-size: 14px;
+  color: #c5c5c5;
+  caret-color: #ffffff;
+  padding: 0 10px;
+}
+
+.common-input:focus {
+  outline: none;
+}
+
+.common-btn {
+  background-color: #ffffff;
+  border-radius: 9999px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  cursor: pointer;
+}

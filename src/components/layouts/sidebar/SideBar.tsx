@@ -112,7 +112,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ onToggle, onPageChange }) => {
               </Link>
             </li>
             <li>
-              <Link href="/upload">
+              <Link href="/misc">
                 <a
                   className={`mb-6 flex gap-9 py-[13px] text-[16px] ${
                     isCollapsed ? "pl-[18px]" : "pl-12"
@@ -126,7 +126,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ onToggle, onPageChange }) => {
               </Link>
             </li>
             <li>
-              <Link href="/create">
+              <Link href="/misc">
                 <a
                   className={`mb-6 flex gap-9 py-[13px] text-[16px] ${
                     isCollapsed ? "pl-[18px]" : "pl-12"
@@ -140,7 +140,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ onToggle, onPageChange }) => {
               </Link>
             </li>
             <li>
-              <Link href="/misc">
+              <Link href="/create">
                 <a
                   className={`mb-6 flex gap-9 py-[13px] text-[16px] ${
                     isCollapsed ? "pl-[18px]" : "pl-12"

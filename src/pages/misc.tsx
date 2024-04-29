@@ -5,11 +5,11 @@ import { MiscView } from "../views";
 const Misc: NextPage = (props) => {
   return (
     <div>
-      <Head>
-        <title>Solana Token Creator - Miscellaneous</title>
+      {/* <Head>
+        <title>Booster Solana</title>
         <meta name="description" content="Additional Functionality" />
       </Head>
-      <MiscView />
+      <MiscView /> */}
     </div>
   );
 };

@@ -1,31 +1,50 @@
 {
-  "name": "booster-frontend",
+  "name": "solana-token-creator",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint && yarn prettier",
+    "prettier": "prettier --check --config ./.prettierrc  \"./**/*.{js,jsx,json,md,ts,tsx,yml,css}\"",
+    "prettier:fix": "prettier --config ./.prettierrc --write \"./**/*.{js,jsx,json,md,ts,tsx,yml,css}\""
   },
   "dependencies": {
-    "next": "14.2.3",
-    "next-themes": "^0.3.0",
-    "nextjs-toploader": "^1.6.12",
-    "react": "^18",
-    "react-dom": "^18",
+    "@heroicons/react": "^1.0.5",
+    "@metaplex-foundation/mpl-token-metadata": "^2.3.3",
+    "@ramonak/react-progress-bar": "^5.2.0",
+    "@solana/spl-token": "^0.3.5",
+    "@solana/wallet-adapter-base": "^0.9.3",
+    "@solana/wallet-adapter-react": "^0.15.3",
+    "@solana/wallet-adapter-react-ui": "^0.9.5",
+    "@solana/wallet-adapter-wallets": "^0.18.2",
+    "@solana/web3.js": "^1.31.0",
+    "@tailwindcss/typography": "^0.5.0",
+    "daisyui": "^1.24.3",
+    "immer": "^9.0.12",
+    "next": "12.0.8",
+    "next-compose-plugins": "^2.2.1",
+    "next-transpile-modules": "^9.0.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-icons": "^5.1.0",
-    "react-router-dom": "^6.23.0"
+    "react-paginate": "^8.2.0",
+    "react-spinners": "^0.13.5",
+    "web3.storage": "^4.4.0",
+    "zustand": "^3.6.9"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3",
-    "postcss": "^8",
-    "sass": "^1.75.0",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "@types/node": "17.0.10",
+    "@types/react": "17.0.38",
+    "autoprefixer": "^10.4.2",
+    "eslint": "8.7.0",
+    "eslint-config-next": "12.0.8",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.15",
+    "typescript": "4.5.4"
   }
 }
